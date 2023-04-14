@@ -5,6 +5,8 @@ src="https://www.dnd5eapi.co/public/favicon.ico" alt="D&D 5e API" width= 300>
 
 ## This is an automateed API testiing project utilizing the [D&D 5e API](https://www.dnd5eapi.co/docs/#overview)
 
+### Project Board
+[Github Project Board](https://github.com/users/MugillaGurilla/projects/1)
 
 ### Epics?
 
