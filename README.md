@@ -10,6 +10,37 @@ src="https://www.dnd5eapi.co/public/favicon.ico" alt="D&D 5e API" width= 300>
 
 ### Epics?
 
+
+###Deliverables
+- [] Complete Test framework for the REST API chosen
+- [] Happy and sad path tests
+- [] Tests written with SpecFlow
+- [] Must use HttpClient 
+- [] Using Dependency injection in the framework (optional)
+- [] **Actually** use Github
+- [] Use Moq to test helper method (optional
+- [] Github Workflow (optional)
+<details>
+<summary> [] project board meets the following</summary>
+6 columns - Product Backlog, Sprint Backlog, In progress, In review, Done, Notes <br> [] Include Project Goal and project DoD in notes <br> [] User stories should be written from the perspective of the user <br> [] test case for each user story <br> [] create user stories <br>
+</details>
+
+
+- [] Detailed README including an extensive explanation on how to use the framework 
+
+
+
+###Framework instructions
+
+How the framework functions: 
+class diagram here
+above class diagram should explain how the framework functions 
+
+instuctions on how you would collaborate further with the project if there was a group taking over the groups work.
+
+
+
+
 ### Definitions of Done and Ready
 
 ##### Definition of Done for API testing
