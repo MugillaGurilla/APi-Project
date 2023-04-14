@@ -31,12 +31,6 @@
     <Folder Include="DndClassServiceTests\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="DndClassServiceTests\WhenTheDndClassServiceIsCalled.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DndClassServiceTests\WhenTheDndClassServiceIsCalled.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <None Update="Testhost.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
