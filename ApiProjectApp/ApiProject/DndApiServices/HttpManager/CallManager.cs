@@ -21,9 +21,9 @@ namespace ApiProject.DndApiServices.HttpManager
         {
             var request = new HttpRequestMessage(HttpMethod.Get, @$"{AppConfigReader.BaseUrl}{section}/{subsection}");
             CallManagerResponse = await _client.SendAsync(request);
-            CallManagerResponse.EnsureSuccessStatusCode();
+            //CallManagerResponse.EnsureSuccessStatusCode();
             return await CallManagerResponse.Content.ReadAsStringAsync();
         }
-    } //{AppConfigReader.BaseUrl}
+    }
 }
 
