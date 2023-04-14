@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BDD\**" />
+    <EmbeddedResource Remove="BDD\**" />
+    <None Remove="BDD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="DndApiServices\" />
     <None Remove="DndApiServices\DataHandling\" />
     <None Remove="DndApiServices\HttpManager\" />
@@ -21,7 +27,6 @@
     <Folder Include="DndApiServices\HttpManager\" />
     <Folder Include="DndApiServices\Services\" />
     <Folder Include="DndApiServices\DataHandling\Models\" />
-    <Folder Include="BDD\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
