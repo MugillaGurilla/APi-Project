@@ -28,14 +28,6 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="DndApiServices\Services\DndClass.cs" />
-    <Compile Remove="DndApiServices\DataHandling\Models\DndClassResponse.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DndApiServices\Services\DndClass.cs" />
-    <None Include="DndApiServices\DataHandling\Models\DndClassResponse.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="DndApiServices\HttpManager\CallManager.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>

@@ -19,7 +19,7 @@ namespace ApiProject.DndApiServices.HttpManager
         // subsection is the specific monster, say, such as 'adult-black-dragon'
         public async Task<string> MakeARequestAsync(string section, string subsection)
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, @$"https://www.dnd5eapi.co/api/{section}/{subsection}");
+            var request = new HttpRequestMessage(HttpMethod.Get, @$"{AppConfigReader.BaseUrl}{section}/{subsection}");
             CallManagerResponse = await _client.SendAsync(request);
             CallManagerResponse.EnsureSuccessStatusCode();
             return await CallManagerResponse.Content.ReadAsStringAsync();
