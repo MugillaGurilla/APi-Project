@@ -5,16 +5,16 @@ using ApiTesting.Utils;
 using TechTalk.SpecFlow.Assist;
 using static System.Collections.Specialized.BitVector32;
 
-namespace ApiTesting
+namespace ApiTesting.BDD
 {
+    [Scope(Feature = "APIRequestReturnsStatusCode")]
     [Binding]
-    public class APIRequestReturnsStatusCodeStepDefinitions
+    public class APIRequestReturnsStatusCodeStepDefinitions : SharedSteps
     {
 
-        private MonsterService _monster;
+        public MonsterService _monster;
 
         private Specifications _specifications;
-
         [Given(@"that I have initialised a DnD 5E API service")]
         public void GivenThatIHaveInitialisedADnD5EAPIService()
         {
@@ -36,7 +36,7 @@ namespace ApiTesting
 
 
 
-        
+
 
     }
 

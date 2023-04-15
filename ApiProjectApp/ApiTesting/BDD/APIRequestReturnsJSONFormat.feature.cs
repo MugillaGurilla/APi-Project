@@ -78,7 +78,7 @@ namespace ApiTesting.BDD
 #line 5
 #line hidden
 #line 6
- testRunner.Given("that I have initialised a D&D 5E API service", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("that I have initialised a DnD 5E API service", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
@@ -86,11 +86,21 @@ namespace ApiTesting.BDD
         [NUnit.Framework.DescriptionAttribute("If I enter a valid API request the information returned should be formatted as JS" +
             "ON")]
         [NUnit.Framework.CategoryAttribute("Happy")]
-        public void IfIEnterAValidAPIRequestTheInformationReturnedShouldBeFormattedAsJSON()
+        [NUnit.Framework.TestCaseAttribute("monsters", "adult-black-dragon", null)]
+        [NUnit.Framework.TestCaseAttribute("monsters", "flesh-golem", null)]
+        [NUnit.Framework.TestCaseAttribute("monsters", "ettin", null)]
+        public void IfIEnterAValidAPIRequestTheInformationReturnedShouldBeFormattedAsJSON(string section, string subsection, string[] exampleTags)
         {
-            string[] tagsOfScenario = new string[] {
+            string[] @__tags = new string[] {
                     "Happy"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("section", section);
+            argumentsOfScenario.Add("subsection", subsection);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("If I enter a valid API request the information returned should be formatted as JS" +
                     "ON", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 9
@@ -107,12 +117,9 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 10
- testRunner.Given("I make a valid API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When(string.Format("I execute the request with {0}, {1}", section, subsection), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.When("I execute the request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 12
  testRunner.Then("the response should be in a Json format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -123,14 +130,24 @@ this.FeatureBackground();
         [NUnit.Framework.DescriptionAttribute("If I enter an invalid API request the information returned should be formatted as" +
             " JSON")]
         [NUnit.Framework.CategoryAttribute("Sad")]
-        public void IfIEnterAnInvalidAPIRequestTheInformationReturnedShouldBeFormattedAsJSON()
+        [NUnit.Framework.TestCaseAttribute("monsters", "JoeMcCann", null)]
+        [NUnit.Framework.TestCaseAttribute("monsters", "Cormac", null)]
+        [NUnit.Framework.TestCaseAttribute("monsters", "Lucas", null)]
+        public void IfIEnterAnInvalidAPIRequestTheInformationReturnedShouldBeFormattedAsJSON(string section, string subsection, string[] exampleTags)
         {
-            string[] tagsOfScenario = new string[] {
+            string[] @__tags = new string[] {
                     "Sad"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("section", section);
+            argumentsOfScenario.Add("subsection", subsection);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("If I enter an invalid API request the information returned should be formatted as" +
                     " JSON", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 16
+#line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -143,13 +160,10 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-#line 17
- testRunner.Given("I make a valid API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+ testRunner.When(string.Format("I execute the request with {0}, {1}", section, subsection), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 18
- testRunner.When("I execute the request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 19
+#line 22
  testRunner.Then("the response should be in a Json format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

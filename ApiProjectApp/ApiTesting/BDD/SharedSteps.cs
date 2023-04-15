@@ -8,5 +8,6 @@ namespace ApiTesting.BDD
 {
     public class SharedSteps
     {
+
     }
 }
