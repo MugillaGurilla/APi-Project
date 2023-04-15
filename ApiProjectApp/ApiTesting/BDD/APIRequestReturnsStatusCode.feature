@@ -14,7 +14,7 @@ Scenario: If I make a valid API request, then status code 200 is returned
 	| section  | subsection         |
 	| monsters | adult-black-dragon |
 	| monsters | flesh-golem        |
-	| monsters | ettin           |
+	| monsters | ettin				|
 
 
 @Sad
