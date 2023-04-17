@@ -175,6 +175,48 @@ this.FeatureBackground();
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("If I make an invalid API request then an error message should be returned")]
+        [NUnit.Framework.CategoryAttribute("Sad")]
+        [NUnit.Framework.TestCaseAttribute("monsters", "JoeMcCann", null)]
+        [NUnit.Framework.TestCaseAttribute("monsters", "Cormac", null)]
+        [NUnit.Framework.TestCaseAttribute("monsters", "Lucas", null)]
+        public void IfIMakeAnInvalidAPIRequestThenAnErrorMessageShouldBeReturned(string section, string subsection, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "Sad"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("section", section);
+            argumentsOfScenario.Add("subsection", subsection);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("If I make an invalid API request then an error message should be returned", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 41
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+#line 42
+    testRunner.When(string.Format("I execute the request with {0}, {1}", section, subsection), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 43
+    testRunner.Then("an error not found should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

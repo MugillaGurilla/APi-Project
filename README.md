@@ -5,6 +5,9 @@ src="https://www.dnd5eapi.co/public/favicon.ico" alt="D&D 5e API" width= 300>
 
 ## This is an automateed API testiing project utilizing the [D&D 5e API](https://www.dnd5eapi.co/docs/#overview)
 
+### CI Badge
+[![Build, Run Unit Tests and generate Coverall report](https://github.com/MugillaGurilla/APi-Project/actions/workflows/CIMerge.yml/badge.svg)](https://github.com/MugillaGurilla/APi-Project/actions/workflows/CIMerge.yml)
+
 ### Project Board
 [Github Project Board](https://github.com/users/MugillaGurilla/projects/1)
 
@@ -47,7 +50,6 @@ Our definitions of Done [can be found here](https://github.com/users/MugillaGuri
 ### 💭 Definition of Ready
 
 Our definitions of Ready [can be found here](https://github.com/users/MugillaGurilla/projects/1/views/1?pane=issue&itemId=25643451)
-
 
 ### Contributors
 Cormac Porter, Samuel Burton, Man Him Yeung, Gharzay Wali, Ali Cengiz
