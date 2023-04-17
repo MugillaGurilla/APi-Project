@@ -11,25 +11,25 @@ src="https://www.dnd5eapi.co/public/favicon.ico" alt="D&D 5e API" width= 300>
 ### Epics?
 
 
-###Deliverables
-- [ ] Complete Test framework for the REST API chosen
-- [ ] Happy and sad path tests
-- [ ] Tests written with SpecFlow
+### Deliverables
+- [x] Complete Test framework for the REST API chosen
+- [x] Happy and sad path tests
+- [x] Tests written with SpecFlow
 - [ ] Must use HttpClient 
 - [ ] Using Dependency injection in the framework (optional)
-- [ ] **Actually** use Github
-- [ ] Use Moq to test helper method (optional
+- [x] **Actually** use Github
+- [ ] Use Moq to test helper method (optional)
 - [ ] Github Workflow (optional)
-- [ ] 6 columns - Product Backlog, Sprint Backlog, In progress, In review, Done, Notes
+- [x] 6 columns - Product Backlog, Sprint Backlog, In progress, In review, Done, Notes
 - [ ] Include Project Goal and project DoD in notes
-- [ ] User stories should be written from the perspective of the user
 - [ ] test case for each user story
-- [ ] create user stories
+- [x] create user stories
+- [x] User stories should be written from the perspective of the user
 - [ ] Detailed README including an extensive explanation on how to use the framework 
 
 
 
-###Framework instructions
+### Framework instructions
 
 How the framework functions: 
 class diagram here
