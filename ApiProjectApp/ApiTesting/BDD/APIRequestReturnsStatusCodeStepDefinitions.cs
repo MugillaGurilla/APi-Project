@@ -17,8 +17,6 @@ namespace ApiTesting.BDD
             Assert.That(currentService.GetStatusCode(), Is.EqualTo(p0));
         }
 
-
-        
         [Then(@"an error not found should be returned")]
         public async Task ThenAnErrorNotFoundShouldBeReturned()
         {
