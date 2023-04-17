@@ -5,9 +5,9 @@ name: Build, Run Unit Tests and generate Coverall report
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "ManhimYeung-patch-1" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "ManhimYeung-patch-1" ]
   schedule:
   - cron: '0 */4 * * *' # every 4 hours
     
