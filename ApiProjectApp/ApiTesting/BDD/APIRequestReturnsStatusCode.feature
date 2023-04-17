@@ -35,3 +35,14 @@ Scenario: If I make an invalid API request, then status code should be 404
 	| classes  | test-engineer |
 	| classes  | dev-ops       |
 	| classes  | developer     |
+
+
+@Sad
+Scenario: If I make an invalid API request then an error message should be returned
+    When I execute the request with <section>, <subsection>
+    Then an error not found should be returned
+    Examples: 
+    | section  | subsection |
+    | monsters | JoeMcCann  |
+    | monsters | Cormac     |
+    | monsters | Lucas      |

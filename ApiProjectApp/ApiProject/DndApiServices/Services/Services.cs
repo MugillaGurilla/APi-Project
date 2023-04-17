@@ -43,6 +43,7 @@ namespace ApiProject.DndApiServices.Services
 
         public int GetStatusCode() => (int)CallManager.CallManagerResponse.StatusCode;
         public string GetResponseContentType() => CallManager.CallManagerResponse.Content.Headers.ContentType.MediaType;
+        public async Task<string> GetErrorMessageAsync() => await CallManager.CallManagerResponse.Content.ReadAsStringAsync();
     }
 }
 
