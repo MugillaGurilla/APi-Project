@@ -2,7 +2,7 @@
 namespace ApiProject.DndApiServices.DataHandling.Models
 {
     // Class here refers to a DnD class NOT (!!!) a C# class
-    public class DndClassObject : IResponse
+    public class D : IResponse
     {
         public string index { get; set; }
         public string name { get; set; }
