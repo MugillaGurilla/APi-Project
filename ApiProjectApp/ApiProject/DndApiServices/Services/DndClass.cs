@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace ApiProject.DndApiServices.Services
 {
-    public class DndClassService : Services
+    public class DndClassService : Services, IService
     {
         public DTO<DndClassObject> DndClassDTO { get; set; }
         public string DndClassResponse;

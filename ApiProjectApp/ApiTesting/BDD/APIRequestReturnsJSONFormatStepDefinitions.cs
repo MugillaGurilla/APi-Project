@@ -9,26 +9,26 @@ namespace ApiTesting.BDD
     [Scope(Feature = "APIRequestReturnsJSONFormat")]
     public class APIRequestReturnsJSONFormatStepDefinitions : SharedSteps
     {
-        public MonsterService _monster;
-
-        private Specifications _specifications;
+        public Services Services;
+        public IService currentService;
 
         [Given(@"that I have initialised a DnD 5E API service")]
         public void GivenThatIHaveInitialisedADnD5EAPIService()
         {
-            _monster = new MonsterService();
+            Services = new Services();
         }
 
         [When(@"I execute the request with (.*), (.*)")]
         public async Task WhenIExecuteTheRequestWithAsync(string section, string subsection)
         {
-            await _monster.MakeRequestAsync(section, subsection);
+            currentService = Services.MakeAServices(section);
+            await currentService.MakeRequestAsync(section, subsection);
         }
 
         [Then(@"the response should be in a Json format")]
         public void ThenTheResponseShouldBeInAJsonFormat()
         {
-            Assert.That(_monster.GetResponseContentType(), Is.EqualTo("application/json"));
+            Assert.That(currentService.GetResponseContentType(), Is.EqualTo("application/json"));
         }
     }
 }

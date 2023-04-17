@@ -12,26 +12,27 @@ namespace ApiTesting.BDD
     public class APIRequestReturnsStatusCodeStepDefinitions : SharedSteps
     {
 
-        public MonsterService _monster;
+        public Services Services;
+        public IService currentService;
 
-        private Specifications _specifications;
         [Given(@"that I have initialised a DnD 5E API service")]
         public void GivenThatIHaveInitialisedADnD5EAPIService()
         {
-            _monster = new MonsterService();
+            Services = new Services();
         }
 
         [When(@"I execute the request with (.*), (.*)")]
         public async Task WhenIExecuteTheRequestWithAsync(string section, string subsection)
         {
-            await _monster.MakeRequestAsync(section, subsection);
+            currentService = Services.MakeAServices(section);
+            await currentService.MakeRequestAsync(section, subsection);
         }
 
 
         [Then(@"status code (.*) should be returned")]
         public void ThenStatusCodeShouldBeReturned(int p0)
         {
-            Assert.That(_monster.GetStatusCode(), Is.EqualTo(p0));
+            Assert.That(currentService.GetStatusCode(), Is.EqualTo(p0));
         }
 
 
