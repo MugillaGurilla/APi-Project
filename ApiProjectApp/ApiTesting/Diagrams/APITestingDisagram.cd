@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ApiTesting.BDD.APIRequestReturnsJSONFormatStepDefinitions">
+    <Position X="11.5" Y="1.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>BDD\APIRequestReturnsJSONFormatStepDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiTesting.BDD.APIRequestReturnsJSONFormatFeature">
+    <Position X="0.5" Y="0.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAABgAEAAgAAgCUAAAgACAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BDD\APIRequestReturnsJSONFormat.feature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiTesting.BDD.APIRequestReturnsStatusCodeFeature">
+    <Position X="0.5" Y="4" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAABgAEgAAAAgCUAAAiACAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BDD\APIRequestReturnsStatusCode.feature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiTesting.BDD.APIRequestReturnsStatusCodeStepDefinitions">
+    <Position X="8" Y="1.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAA=</HashCode>
+      <FileName>BDD\APIRequestReturnsStatusCodeStepDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiTesting.BDD.SharedSteps" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAEA=</HashCode>
+      <FileName>BDD\SharedSteps.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

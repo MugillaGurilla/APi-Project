@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ApiProject.DndApiServices.Services.DndClassService">
+    <Position X="0.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\Services\DndClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ApiProject.DndApiServices.Services.MonsterService">
+    <Position X="2.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAE=</HashCode>
+      <FileName>DndApiServices\Services\Monster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ApiProject.DndApiServices.Services.Services">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAGAAAAAAAACAAAAAAAgAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>DndApiServices\Services\Services.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.Services.SpellService">
+    <Position X="4.25" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\Services\Spell.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.DTO&lt;T&gt;">
+    <Position X="9.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\DTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.HttpManager.CallManager">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>DndApiServices\HttpManager\CallManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.D">
+    <Position X="9.25" Y="4.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Equipment" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Option" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.SavingThrow" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Choice" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Item2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.SpellcastingAbility" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Info" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.From" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.DndClassProficiency" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Of" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Subclass" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Item" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.EquipmentCategory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.MultiClassing" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.AbilityScore">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Prerequisite" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.StartingEquipment" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.ProficiencyChoice" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.StartingEquipmentOption" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.D.Spellcasting" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAIAAAAAgAAAEAMAAAAUACIgBAFAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\DndClassResponse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.SpellObject">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ApiProject.DndApiServices.DataHandling.Models.SpellObject.Result">
+        <TypeIdentifier>
+          <NewMemberFileName>DndApiServices\DataHandling\Models\SpellResponse.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\SpellResponse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.MonsterObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gARAYAAAAAAAkCgCAIAEAQBoEAANAQAZQAAAAFABAEA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Action" Collapsed="true">
+    <Position X="14.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAgCAABCQgAAAAAAAFAABAAACAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.ArmorClass" Collapsed="true">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABACAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Damage" Collapsed="true">
+    <Position X="18.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.DamageType" Collapsed="true">
+    <Position X="20" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAABAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Dc" Collapsed="true">
+    <Position X="14.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.DcType" Collapsed="true">
+    <Position X="16.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAABAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.LegendaryAction" Collapsed="true">
+    <Position X="18.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAgAAAAAAAAAAAAAAEAABAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Proficiency" Collapsed="true">
+    <Position X="14.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Proficiency2" Collapsed="true">
+    <Position X="16.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAABAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Senses" Collapsed="true">
+    <Position X="18.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.SpecialAbility" Collapsed="true">
+    <Position X="20" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAEAABAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Speed" Collapsed="true">
+    <Position X="14.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgAAAAAQA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApiProject.DndApiServices.DataHandling.Models.Usage" Collapsed="true">
+    <Position X="16.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAAAAAAAAAAAAAAAAAAAAAgABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\Models\MonsterResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ApiProject.DndApiServices.DataHandling.IResponse" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\DataHandling\IResponse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ApiProject.DndApiServices.Services.IService">
+    <Position X="2.25" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAACAAAgAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DndApiServices\Services\IService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

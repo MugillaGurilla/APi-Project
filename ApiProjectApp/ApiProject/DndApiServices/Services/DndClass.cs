@@ -8,13 +8,13 @@ namespace ApiProject.DndApiServices.Services
 {
     public class DndClassService : Services, IService
     {
-        public DTO<DndClassObject> DndClassDTO { get; set; }
+        public DTO<D> DndClassDTO { get; set; }
         public string DndClassResponse;
 
         public DndClassService()
         {
             CallManager = new CallManager();
-            DndClassDTO = new DTO<DndClassObject>();
+            DndClassDTO = new DTO<D>();
         }
 
         public async Task MakeRequestAsync(string section, string subsection)
