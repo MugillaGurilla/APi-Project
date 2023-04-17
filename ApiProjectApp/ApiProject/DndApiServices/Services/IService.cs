@@ -12,7 +12,6 @@ namespace ApiProject.DndApiServices.Services
         async Task<string> GetErrorMessageAsync()
         {
             return "0";
-
         }
 
     }
