@@ -22,7 +22,6 @@ namespace ApiProject.DndApiServices.HttpManager
             //var request = new HttpRequestMessage(HttpMethod.Get, @$"{AppConfigReader.BaseUrl}{section}/{subsection}");
             var request = new HttpRequestMessage(HttpMethod.Get, @$"https://www.dnd5eapi.co/api/{section}/{subsection}");
             CallManagerResponse = await _client.SendAsync(request);
-            //CallManagerResponse.EnsureSuccessStatusCode();
             return await CallManagerResponse.Content.ReadAsStringAsync();
         }
     }

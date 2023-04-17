@@ -9,6 +9,11 @@ namespace ApiProject.DndApiServices.Services
         }
         int GetStatusCode();
         string GetResponseContentType();
+        async Task<string> GetErrorMessageAsync()
+        {
+            return "0";
+
+        }
 
     }
 }
