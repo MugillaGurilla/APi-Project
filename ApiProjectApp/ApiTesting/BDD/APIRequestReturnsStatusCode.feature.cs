@@ -89,6 +89,12 @@ namespace ApiTesting.BDD
         [NUnit.Framework.TestCaseAttribute("monsters", "adult-black-dragon", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "flesh-golem", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "ettin", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=fireball", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=blight", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=heat-metal", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "paladin", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "wizard", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "cleric", null)]
         public void IfIMakeAValidAPIRequestThenStatusCode200IsReturned(string section, string subsection, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -131,6 +137,9 @@ this.FeatureBackground();
         [NUnit.Framework.TestCaseAttribute("monsters", "JoeMcCann", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "Cormac", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "Lucas", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "test-engineer", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "dev-ops", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "developer", null)]
         public void IfIMakeAnInvalidAPIRequestThenStatusCodeShouldBe404(string section, string subsection, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -144,7 +153,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("section", section);
             argumentsOfScenario.Add("subsection", subsection);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("If I make an invalid API request, then status code should be 404", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 21
+#line 27
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -157,10 +166,10 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-#line 22
+#line 28
  testRunner.When(string.Format("I execute the request with {0}, {1}", section, subsection), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 23
+#line 29
  testRunner.Then("status code 404 should be returned", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

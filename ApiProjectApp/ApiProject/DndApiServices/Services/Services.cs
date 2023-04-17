@@ -19,7 +19,7 @@ namespace ApiProject.DndApiServices.Services
 
         public IService MakeAServices(string serviceType)
         {
-            if (serviceType == "monster")
+            if (serviceType == "monsters")
             {
                 MonsterService monsterService = new MonsterService();
                 return monsterService;

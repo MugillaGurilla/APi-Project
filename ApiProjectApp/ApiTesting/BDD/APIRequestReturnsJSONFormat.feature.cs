@@ -89,6 +89,12 @@ namespace ApiTesting.BDD
         [NUnit.Framework.TestCaseAttribute("monsters", "adult-black-dragon", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "flesh-golem", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "ettin", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=fireball", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=blight", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=heat-metal", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "paladin", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "wizard", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "cleric", null)]
         public void IfIEnterAValidAPIRequestTheInformationReturnedShouldBeFormattedAsJSON(string section, string subsection, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -133,6 +139,12 @@ this.FeatureBackground();
         [NUnit.Framework.TestCaseAttribute("monsters", "JoeMcCann", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "Cormac", null)]
         [NUnit.Framework.TestCaseAttribute("monsters", "Lucas", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=Slap", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=Slam", null)]
+        [NUnit.Framework.TestCaseAttribute("spells", "?name=snoosh", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "test-engineer", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "dev-ops", null)]
+        [NUnit.Framework.TestCaseAttribute("classes", "developer", null)]
         public void IfIEnterAnInvalidAPIRequestTheInformationReturnedShouldBeFormattedAsJSON(string section, string subsection, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -147,7 +159,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("subsection", subsection);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("If I enter an invalid API request the information returned should be formatted as" +
                     " JSON", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 20
+#line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -160,10 +172,10 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-#line 21
+#line 26
  testRunner.When(string.Format("I execute the request with {0}, {1}", section, subsection), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 27
  testRunner.Then("the response should be in a Json format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
