@@ -41,11 +41,11 @@ deals with deserialising JSON responses into C# objects, **HttpManager** deals w
 **Services** is more granular and details the actual nuances of a Spell, Monster or DnD Class service.
 
 A goal of this framework was to keep everything generic right up until the point where it could no longer be, allowing the frameowrk
-to be extensible and polymorphic.
+to be extensible.
 
 #### DataHandling
 
-Within the Models folder, there are C# object definitions for the each service. `DTO.cs` uses Newtonsoft to API responses from JSON to
+Within the Models folder, there are C# object definitions for the each service. `DTO.cs` uses Newtonsoft to deserialise API responses from JSON to
 a C# object. For example, `DndClass.cs` calls `CallManager.cs` which deserialises to a `DndClassReponse.cs` object. `IResponse.cs` is
 merely used to implement generic types, see line 6 of `DTO.cs`
 
@@ -56,24 +56,24 @@ public class DTO<T> where T : IResponse, new()
 #### HttpManager
 
 This class utilises HttpClient to actually execute an API request. The `MakeARequestAsync` function ultimately returns the JSON
-response as an unformatted string which is turned into a JObject and the relevant C# object - `DndClass.cs` to keep example going.
+response as an unformatted string. This is then turned into a JObject and the relevant C# object.
 
 #### Services
 
 Some service behaviour is defined with `Services.cs` and `IService.cs` but service behaviour is fully fleshed out within the
 individual classes of `DndClass.cs`, `Spell.cs` and `Monster.cs`. All of which inherit from IService and Services. The main goal of
 `IService.cs` is to group all services together and implement generic types. MakeAServices() is an important function that allows
-the tests to be polymorphic. It's utilises within the BDD folder in `SharedSteps.cs`. Ultimately, this allows the program to reuse the
-same tests for many different API calls and makes the framework eminently extensible.
+the tests to be reusable. It is utilised within the BDD folder in `SharedSteps.cs`. Ultimately, this allows the program to reuse the
+same tests for many different API calls.
 
 ![20230417_145445_MicrosoftTeams-image.png](readme-assets/20230417_145445_MicrosoftTeams-image.png)
 
 #### SharedSteps.cs
 
-The individual step definitions simply contain different Assert.That() functions but the heavy-lifting in regard to tests in `SharedSteps`.
-To start a Services object is instantiated. This defines some of the generic behaviour for a service but it's by no means done. Then a IService
-interface is instantiated, this will ultimately become either an `DndClass.cs`, `Spell.cs` and `Monster.cs` object. Within the Then statement, the
-IService is turned from generic to specific, becoming a Monster service, for example. The `section` argument is key to this and is used within
+The individual step definitions simply contain different Assert.That() functions. However, the heavy-lifting in regard to tests in `SharedSteps`.
+To start a `Services` object and `IServices` interface are instantiated. Within the Then statement, the
+`IService` interface is turned from a generic interface to specific service, becoming a Monster, Spell or DndClass service. The `section` argument
+is key to this and is used within
 an if statement in MakeAService() in `Services.cs`. With the service's full behaviour now defined, an API call is made using MakeARequestAsync().
 
 class diagram here
