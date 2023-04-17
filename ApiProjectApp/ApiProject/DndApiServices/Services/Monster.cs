@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace ApiProject.DndApiServices.Services
 {
-	public class MonsterService : Services
+	public class MonsterService : Services, IService
 	{
         public DTO<MonsterObject> MonsterDTO { get; set; }
         public string MonsterResponse;
