@@ -40,45 +40,13 @@ instuctions on how you would collaborate further with the project if there was a
 
 
 
-### Definitions of Done and Ready
+### 💭 Definitions of Done
 
-##### Definition of Done for API testing
+Our definitions of Done [can be found here](https://github.com/users/MugillaGurilla/projects/1/views/1?pane=issue&itemId=25643413)
 
-* [ ] Thorough test coverage
-* [x] Repeatable tests
-* [ ] Isolated tests that test single unit
-* [x] Easily readable tests - even non-technical can understand them.
+### 💭 Definition of Ready
 
-##### Definition of Done for the Presentation
-
-* [ ] Slides are well designed, with concise, accurate information
-* [ ] Presenters know their slides well enough to discuss them without a script
-* [ ] Multimedia such as living documentation, videos and graphs are used
-* [ ] Use of text is minimal
-* [ ] Retrospective has been completed and findings are present within slides.
-
-##### Definition of Ready
-
-User Stories:
-
-* [x] Immediately actionable
-* [x] Negotiated and agreed upon by all
-* [x] Valuable User Stories i.e. Users paths with most coverage or business value are given priority
-* [x] Estimatable i.e. expected response can be estimated
-* [x] Small
-* [x] Testable
-
-HTTP Client:
-* [ ] Dependencies
-* [ ] Easy to read
-
-Framework: 
-* [x] Extendable
-
-##### And the project must have:
-
-* [x] Individual test cases written
-* [x] A ready-to-use Testing Framework
+Our definitions of Ready [can be found here](https://github.com/users/MugillaGurilla/projects/1/views/1?pane=issue&itemId=25643451)
 
 ### Contributors
 Cormac Porter, Samuel Burton, Man Him Yeung, Gharzay Wali, Ali Cengiz
