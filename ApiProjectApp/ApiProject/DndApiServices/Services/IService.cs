@@ -13,7 +13,7 @@ namespace ApiProject.DndApiServices.Services
         {
             return "0";
         }
-
+        List<string> GetHeaders();
     }
 }
 

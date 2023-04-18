@@ -34,7 +34,9 @@ src="https://www.dnd5eapi.co/public/favicon.ico" alt="D&D 5e API" width= 300>
 
 ### Framework
 
-#### How the framework functions
+<img src="readme-assets/services%20class%20diagram.png" alt="Services Class Diagram" width=800>
+
+### How the framework functions
 
 There are three folders within the project, DataHandling, HttpManager and Services. Broadly speaking, the **DataHandling** folder
 deals with deserialising JSON responses into C# objects, **HttpManager** deals with making API requests, but only in a generic sense.
@@ -43,7 +45,7 @@ deals with deserialising JSON responses into C# objects, **HttpManager** deals w
 A goal of this framework was to keep everything generic right up until the point where it could no longer be, allowing the frameowrk
 to be extensible.
 
-#### DataHandling
+### DataHandling
 
 Within the Models folder, there are C# object definitions for the each service. `DTO.cs` uses Newtonsoft to deserialise API responses from JSON to
 a C# object. For example, `DndClass.cs` calls `CallManager.cs` which deserialises to a `DndClassReponse.cs` object. `IResponse.cs` is
@@ -53,12 +55,12 @@ merely used to implement generic types, see line 6 of `DTO.cs`
 public class DTO<T> where T : IResponse, new()
 ```
 
-#### HttpManager
+### HttpManager
 
 This class utilises HttpClient to actually execute an API request. The `MakeARequestAsync` function ultimately returns the JSON
 response as an unformatted string. This is then turned into a JObject and the relevant C# object.
 
-#### Services
+### Services
 
 Some service behaviour is defined with `Services.cs` and `IService.cs` but service behaviour is fully fleshed out within the
 individual classes of `DndClass.cs`, `Spell.cs` and `Monster.cs`. All of which inherit from IService and Services. The main goal of
@@ -68,7 +70,7 @@ same tests for many different API calls.
 
 ![20230417_145445_MicrosoftTeams-image.png](readme-assets/20230417_145445_MicrosoftTeams-image.png)
 
-#### SharedSteps.cs
+### SharedSteps.cs
 
 The individual step definitions simply contain different Assert.That() functions. However, the heavy-lifting in regard to tests in `SharedSteps`.
 To start a `Services` object and `IServices` interface are instantiated. Within the Then statement, the
@@ -80,6 +82,8 @@ class diagram here
 above class diagram should explain how the framework functions
 
 instuctions on how you would collaborate further with the project if there was a group taking over the groups work.
+
+------
 
 ### 💭 Definitions of Done
 
